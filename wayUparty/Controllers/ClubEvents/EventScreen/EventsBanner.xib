@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EventsBanner" id="gTV-IL-0wX" customClass="EventsBanner" customModule="wayUparty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xch-WS-NRT">
+                        <rect key="frame" x="0.0" y="10.666666666666671" width="375" height="119.00000000000001"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8AB-oG-y2M" customClass="FSPagerView" customModule="FSPagerView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8AB-oG-y2M" firstAttribute="leading" secondItem="xch-WS-NRT" secondAttribute="leading" id="2qY-BP-Xmo"/>
+                            <constraint firstAttribute="trailing" secondItem="8AB-oG-y2M" secondAttribute="trailing" id="ECa-vO-8OU"/>
+                            <constraint firstAttribute="bottom" secondItem="8AB-oG-y2M" secondAttribute="bottom" id="KSX-Ce-orR"/>
+                            <constraint firstItem="8AB-oG-y2M" firstAttribute="top" secondItem="xch-WS-NRT" secondAttribute="top" id="kwr-qY-FsT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xch-WS-NRT" secondAttribute="trailing" id="I5m-wo-dHI"/>
+                <constraint firstItem="xch-WS-NRT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kQc-va-Ovq"/>
+                <constraint firstItem="xch-WS-NRT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10.67" id="skQ-AZ-ymt"/>
+                <constraint firstAttribute="bottom" secondItem="xch-WS-NRT" secondAttribute="bottom" constant="10.33" id="zhx-rm-c1C"/>
+            </constraints>
+            <size key="customSize" width="375" height="140"/>
+            <connections>
+                <outlet property="pagerView" destination="8AB-oG-y2M" id="EgR-UC-I5T"/>
+            </connections>
+            <point key="canvasLocation" x="287.78625954198475" y="31.690140845070424"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
